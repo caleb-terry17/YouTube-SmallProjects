@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 
 int main() {
+    // & operator - gets memory address of variable
+    int var2 = 5;
+    std::cout << "var2: " << var2 << std::endl;
+    std::cout << "&var2: " << &var2 << std::endl;
+
+    // * operator - dereferences a memory address and gets the value stored at that memory address
+    std::cout << "*(&var2): " << *(&var2) << std::endl;
+
     // int vs int*
     int var1 = 1;
     int* ptr1 = &var1;
@@ -19,4 +27,5 @@ int main() {
     std::cout << "var1: " << var1 << std::endl;
     std::cout << "ptr1: " << ptr1 << std::endl;
     std::cout << "*ptr1: " << *ptr1 << std::endl;
+    std::cout << "&ptr1: " << &ptr1 << std::endl;
 }
